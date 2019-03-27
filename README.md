@@ -30,4 +30,4 @@ This is a python project to help show how python works!:
 - Other math library functions to be used!
 ```
 
-Side note: I'm learning python myself, so i may occasionally make some programming mistakes! Bear with me! :')
+Side note: I'm learning python myself, so i may occasionally make some programming mistakes! Bear with me! :') OK, no problem. Put the URL of the site where you got the initial code to give them credit. 
