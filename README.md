@@ -26,15 +26,15 @@
 ```
 #Current Functionalities
 ```
-	- Numbers
-	- Addition
-	- Subtraction
-	- Multiplication
-	- Division
+-	Numbers
+-	Addition
+- 	Subtraction
+- 	Multiplication
+- 	Division
 ```
 #License
-
 ```
+
 #Contributing
 ```
 https://github.com/bchewy/Calculator-Python
