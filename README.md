@@ -34,8 +34,8 @@
 ```
 #License
 ```
-
+```
 #Contributing
 ```
-https://github.com/bchewy/Calculator-Python
+- https://github.com/bchewy/Calculator-Python
 ```
