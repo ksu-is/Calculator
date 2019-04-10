@@ -6,7 +6,9 @@ This is a python project to help show how python works!:
 - Commented throughly to help you understand!
 - Different ways you can create a calculator program, explore yours!
 - NOTE : We will be focused on Python 3.
-```
+```Task List:
+Set up README
+
 #There will be several parts of this project 
 ```
 - Generic teaching of python!
