@@ -1,36 +1,38 @@
 ## Calculator-Python
 
-This is a python project to help show how python works!:
+#Purpose
 ```
-- Ultimately, it's to teach YOU how you can do this yourself!
-- Commented throughly to help you understand!
-- Different ways you can create a calculator program, explore yours!
-- NOTE : We will be focused on Python 3.
-```Task List:
-Set up README
+- 	The basic goal is to make a simple calculator. 
+-	If we have more time or ideas, we might try to add more complicated functions.
+-	Helps students calculate conveniently and quickly.
 
-#There will be several parts of this project 
+#Target Group
+-	Everyone (Especially business teachers and students)
 ```
-- Generic teaching of python!
-- Ways you can use different in-built python keywords!
-- How it can be used to make a calculator, arithmetic calculations, or more!
-- Some cool things it can do!
+#Task List
+-"checkbox"Set up README
+-Set up task list
+-Find related repository
+-Clone repository into team
+-Ensure repository is public
+-Assign an open source license
+-Make sure team members have access to repository
+-Evaluate related repository
+-Test repository and get it running
+-Document how to work repository
+-Document issues encounted
 ```
 #Current Functionalities
 ```
-- Default Arithmetic operators
+	- Numbers
 	- Addition
 	- Subtraction
 	- Multiplication
 	- Division
-- Squareroot of a number
-- Degree to Radian Conversion
-- Radian to Degree Conversion
 ```
-#Planned things
-```
-- Other math library functions to be used!
-```
+#License
 
-Side note: I'm learning python myself, so i may occasionally make some programming mistakes! Bear with me! :') OK, no problem. Put the URL of the site where you got the initial code to give them credit. 
-I got the code from https://github.com/bchewy/Calculator-Python/blob/master/README.md
+```
+#Contributing
+https://github.com/bchewy/Calculator-Python
+```
