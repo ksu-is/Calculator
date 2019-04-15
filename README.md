@@ -12,17 +12,17 @@
 ```
 #Task List
 ```
--	Set up README
--	Set up task list
--	Find related repository
--	Clone repository into team
--	Ensure repository is public
--	Assign an open source license
--	Make sure team members have access to repository
--	Evaluate related repository
--	Test repository and get it running
--	Document how to work repository
--	Document issues encounted
+-	[X] Set up README
+-	[X] Set up task list
+-	[X] Find related repository
+-	[] Clone repository into team
+-	[] Ensure repository is public
+-	[] Assign an open source license
+-	[X] Make sure team members have access to repository
+-	[] Evaluate related repository
+-	[] Test repository and get it running
+-	[] Document how to work repository
+-	[] Document issues encounted
 ```
 #Current Functionalities
 ```
