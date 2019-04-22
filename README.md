@@ -15,12 +15,12 @@
 -	[X] Set up README
 -	[X] Set up task list
 -	[X] Find related repository
--	[] Clone repository into team
+-	[X] Clone repository into team
 -	[] Ensure repository is public
 -	[] Assign an open source license
 -	[X] Make sure team members have access to repository
 -	[] Evaluate related repository
--	[] Test repository and get it running
+-	[X] Test repository and get it running
 -	[] Document how to work repository
 -	[] Document issues encounted
 ```
