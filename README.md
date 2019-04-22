@@ -34,6 +34,7 @@
 ```
 #License
 ```
+MIT License
 ```
 #Contributing
 ```
