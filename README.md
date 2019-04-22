@@ -16,7 +16,7 @@
 -	[X] Set up task list
 -	[X] Find related repository
 -	[X] Clone repository into team
--	[] Ensure repository is public
+-	[X] Ensure repository is public
 -	[] Assign an open source license
 -	[X] Make sure team members have access to repository
 -	[] Evaluate related repository
