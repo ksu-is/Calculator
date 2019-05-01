@@ -145,7 +145,7 @@ class Application(Frame):
         master.bind("4", lambda event, char="4", btn=self.four_bttn: self.add_chr(char, btn))
         master.bind("3", lambda event, char="3", btn=self.three_bttn: self.add_chr(char, btn))
         master.bind("2", lambda event, char="2", btn=self.two_bttn: self.add_chr(char, btn))
-        master.bind("1", lambda event, char="1", btn=self.one_bttn: self.add_chr(char, btn))
+        master.bind("1", lambda event, char="bin", btn=self.one_bttn: self.add_chr(char, btn))
         master.bind("0", lambda event, char="0", btn=self.zero_bttn: self.add_chr(char, btn))
         master.bind("*", lambda event, char="×", btn=self.mult_bttn: self.add_chr(char, btn))
         master.bind("/", lambda event, char="÷", btn=self.div_bttn: self.add_chr(char, btn))
@@ -156,8 +156,8 @@ class Application(Frame):
         master.bind("+", lambda event, char="+", btn=self.add_bttn: self.add_chr(char, btn))
         master.bind("(", lambda event, char="(", btn=self.lpar_bttn: self.add_chr(char, btn))
         master.bind(")", lambda event, char=")", btn=self.rpar_bttn: self.add_chr(char, btn))
-        master.bind("Bin", lambda event, char="Bin", btn=self.Bin_bttn: self.add_chr(char, btn))
-        master.bind("sin", lambda event, char="Bin", btn=self.Bin_bttn: self.add_chr(char, btn))
+        master.bind("\\", lambda event, char="Bin", btn=self.bin_bttn: self.add_chr(char, btn))
+        master.bind("`", lambda event, char="sin", btn=self.bin_bttn: self.add_chr(char, btn))
         master.bind("c", lambda event, btn=self.ac_bttn: self.flash(btn), self.clear_all)
     
     def create_widgets(self):
@@ -234,8 +234,8 @@ class Application(Frame):
         self.sqr_bttn = Button(self, text="^", width=9, height=3, command=lambda: self.add_chr('^'))
         self.sqr_bttn.grid(row=3, column=5)
 
-        self.Bin_bttn = Button(self, text="Bin", width=9, height=3, command=lambda: self.add_chr('Bin'))
-        self.Bin_bttn.grid(row=3, column=6)
+        self.bin_bttn = Button(self, text="Bin", width=9, height=3, command=lambda: self.add_chr('Bin'))
+        self.bin_bttn.grid(row=3, column=6)
 
 root = Tk()
 root.geometry()
