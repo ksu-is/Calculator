@@ -238,5 +238,6 @@ class Application(Frame):
 
 root = Tk()
 root.geometry()
+root.title("Calculator")
 app = Application(root)
 root.mainloop()
