@@ -70,10 +70,12 @@ class Application(Frame):
         self.entry.configure(state="normal")
         e = self.entry.get()
         e = e.replace("√","sqr")
+        e = e.replace(";","cbrt")
         e = e.replace("×", "*")
         e = e.replace("²", "**2")
         e = e.replace("^", "**")
         e = e.replace("÷", "/")
+        
 
         if self.calBin:
             #convert 10 (binary) to 2(decimal)
@@ -111,7 +113,7 @@ class Application(Frame):
         """
         Flashes a corresponding button when key is pressed.
         :param btn: button
-        :return: None
+        :return: None 
         """
         if btn != None:
             btn.config(bg="yellow")
@@ -145,7 +147,7 @@ class Application(Frame):
         master.bind("4", lambda event, char="4", btn=self.four_bttn: self.add_chr(char, btn))
         master.bind("3", lambda event, char="3", btn=self.three_bttn: self.add_chr(char, btn))
         master.bind("2", lambda event, char="2", btn=self.two_bttn: self.add_chr(char, btn))
-        master.bind("1", lambda event, char="bin", btn=self.one_bttn: self.add_chr(char, btn))
+        master.bind("1", lambda event, char="1", btn=self.one_bttn: self.add_chr(char, btn))
         master.bind("0", lambda event, char="0", btn=self.zero_bttn: self.add_chr(char, btn))
         master.bind("*", lambda event, char="×", btn=self.mult_bttn: self.add_chr(char, btn))
         master.bind("/", lambda event, char="÷", btn=self.div_bttn: self.add_chr(char, btn))
@@ -154,10 +156,12 @@ class Application(Frame):
         master.bind(".", lambda event, char=".", btn=self.dec_bttn: self.add_chr(char, btn))
         master.bind("-", lambda event, char="-", btn=self.sub_bttn: self.add_chr(char, btn))
         master.bind("+", lambda event, char="+", btn=self.add_bttn: self.add_chr(char, btn))
+        master.bind("+", lambda event, char="&", btn=self.add_bttn: self.add_chr(char, btn))
         master.bind("(", lambda event, char="(", btn=self.lpar_bttn: self.add_chr(char, btn))
         master.bind(")", lambda event, char=")", btn=self.rpar_bttn: self.add_chr(char, btn))
-        master.bind("\\", lambda event, char="Bin", btn=self.bin_bttn: self.calBin_chr(char, btn))
+        master.bind("\\", lambda event, char="bin", btn=self.bin_bttn: self.calBin_chr(char, btn))
         master.bind("c", lambda event, btn=self.ac_bttn: self.flash(btn), self.clear_all)
+        master.bind(";", lambda event, char="cbrt", btn=self.cb_bttn: self.add_chr(char, btn))
     
     def create_widgets(self):
         """
@@ -175,6 +179,9 @@ class Application(Frame):
 
         self.add_bttn = Button(self, text="+", width=9, height=3, command=lambda: self.add_chr('+'))
         self.add_bttn.grid(row=4, column=3)
+
+        self.add_bttn = Button(self, text="&", width=9, height=3, command=lambda: self.add_chr('+'))
+        self.add_bttn.grid(row=4, column=6)
 
         self.mult_bttn = Button(self, text="×", width=9, height=3, command=lambda: self.add_chr('×'))
         self.mult_bttn.grid(row=2, column=3)
@@ -233,8 +240,14 @@ class Application(Frame):
         self.sqr_bttn = Button(self, text="^", width=9, height=3, command=lambda: self.add_chr('^'))
         self.sqr_bttn.grid(row=3, column=5)
 
-        self.bin_bttn = Button(self, text="Bin", width=9, height=3, command=lambda: self.calBin_chr('Bin'))
+        self.bin_bttn = Button(self, text="bin", width=9, height=3, command=lambda: self.calBin_chr('bin'))
         self.bin_bttn.grid(row=3, column=6)
+
+        self.sin_bttn = Button(self, text="sin", width=9, height=3, command=lambda: self.add_calc('sin'))
+        self.sin_bttn.grid(row=2, column=6)
+
+        self.cb_bttn = Button(self, text="cbrt", width=9, height=3, command=lambda: self.add_chr('cbrt'))
+        self.cb_bttn.grid(row=1, column=6)
 
 root = Tk()
 root.geometry()
