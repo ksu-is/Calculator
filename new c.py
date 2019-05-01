@@ -247,11 +247,11 @@ class Application(Frame):
         self.sin_bttn = Button(self, text="sin", width=9, height=3, command=lambda: self.add_chr('sin'))
         self.sin_bttn.grid(row=1, column=6)
 
-        self.sin_bttn = Button(self, text="cos", width=9, height=3, command=lambda: self.add_chr('cos'))
-        self.sin_bttn.grid(row=3, column=6)
+        self.cos_bttn = Button(self, text="cos", width=9, height=3, command=lambda: self.add_chr('cos'))
+        self.cos_bttn.grid(row=3, column=6)
 
-        self.sin_bttn = Button(self, text="tan", width=9, height=3, command=lambda: self.add_chr('tan'))
-        self.sin_bttn.grid(row=2, column=6)
+        self.tan_bttn = Button(self, text="tan", width=9, height=3, command=lambda: self.add_chr('tan'))
+        self.tan_bttn.grid(row=2, column=6)
 
 
 root = Tk()
