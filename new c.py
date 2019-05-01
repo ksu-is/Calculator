@@ -156,8 +156,7 @@ class Application(Frame):
         master.bind("+", lambda event, char="+", btn=self.add_bttn: self.add_chr(char, btn))
         master.bind("(", lambda event, char="(", btn=self.lpar_bttn: self.add_chr(char, btn))
         master.bind(")", lambda event, char=")", btn=self.rpar_bttn: self.add_chr(char, btn))
-        master.bind("\\", lambda event, char="Bin", btn=self.bin_bttn: self.add_chr(char, btn))
-        master.bind("`", lambda event, char="sin", btn=self.bin_bttn: self.add_chr(char, btn))
+        master.bind("\\", lambda event, char="Bin", btn=self.bin_bttn: self.calBin_chr(char, btn))
         master.bind("c", lambda event, btn=self.ac_bttn: self.flash(btn), self.clear_all)
     
     def create_widgets(self):
@@ -234,7 +233,7 @@ class Application(Frame):
         self.sqr_bttn = Button(self, text="^", width=9, height=3, command=lambda: self.add_chr('^'))
         self.sqr_bttn.grid(row=3, column=5)
 
-        self.bin_bttn = Button(self, text="Bin", width=9, height=3, command=lambda: self.add_chr('Bin'))
+        self.bin_bttn = Button(self, text="Bin", width=9, height=3, command=lambda: self.calBin_chr('Bin'))
         self.bin_bttn.grid(row=3, column=6)
 
 root = Tk()
