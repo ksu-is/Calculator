@@ -2,7 +2,7 @@
 # LICENSED Attribution-NonCommercial-ShareAlike
 # 4.0 International (CC BY NC-SA 4.0)
 # CODE IS NOT OWNED BY ME
-# Improved certain sections and added various other functions
+# Improved certain sections and added various other functions by Xu
 import math
 def mode():
     mode = True
